@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TYPING MASTER</h1>
+            <div class="subtitle">Arcade Edition</div>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">WPM</div>
+                <div class="stat-value" id="wpm">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Accuracy</div>
+                <div class="stat-value" id="accuracy">100<span style="font-size: 1.5rem;">%</span></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Timer</div>
+                <div class="stat-value" id="timer">0s</div>
+            </div>
+        </div>
+
+        <div class="typing-area">
+            <div id="sample-text"></div>
+            <input 
+                type="text" 
+                id="typing-input" 
+                placeholder="Click here to start typing..."
+                autocomplete="off"
+                spellcheck="false"
+            >
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">Start Test</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <div class="status-message" id="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
